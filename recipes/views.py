@@ -9,7 +9,7 @@ def home(request):
     ).order_by('-id')
 
     return render(request, 'recipes/pages/home.html', {
-        'recipes': recipes
+        'recipes': recipes,
     })
 
 
