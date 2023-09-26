@@ -8,6 +8,7 @@
     {% include 'recipes/partials/head.html' %}
     <title>{% block title %}{% endblock title %} Recipes</title>
 </head>
+
 <body>
     {% include 'recipes/partials/header.html' %}
 
@@ -17,6 +18,8 @@
         {% block content %}
 
         {% endblock %}
+
+        {% include 'recipes/partials/pagination.html' %}
     </main>
 
     {% include 'recipes/partials/footer.html' %}
